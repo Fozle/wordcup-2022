@@ -109,14 +109,14 @@ aside a{
     background-color: #DD0000 !important;
     color: white;
 }
-.blogs{
+.blogs ,.matchs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 25px;
     width: 80%;
   }
 
-.blog{
+.blog,.match{
     
     border:  1px solid #E8E8E8;
     border-radius: 10px;
@@ -213,7 +213,7 @@ footer a{
 }
 
 
-
+/* Responsive Website */
 @media only screen and (max-width:588px) {
     .header-contant{
    padding: 70px 0px 70px 56px ;
@@ -232,11 +232,11 @@ footer a{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-    .blogs{
+    .blogs,.matchs{
         grid-template-columns: repeat(1,1fr);
         
     }
-    .blog-containder{
+    .blog-containder {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
@@ -297,11 +297,21 @@ footer a{
         border: 1px solid gray;
         padding: 10px 20px;
     }
-    .blogs{
+    .blogs,.matchs{
         grid-template-columns: repeat(2,1fr);
         
     }
+    
 }
 
 /* end  */
+
+/* upcoming page start */
+.upcoming-match-country{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    
+   
+}
 
