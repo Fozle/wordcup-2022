@@ -61,6 +61,22 @@ body{
     color: #DD0000;
 
 }
+/* animation header */
+.header-contant button {
+    
+   
+    position: relative;
+    animation: button-animation 4s ease-in-out infinite alternate;
+     
+  }
+  
+  @keyframes button-animation {
+    0%   {background-color:red; left:0px; top:0px;}
+    
+    100% {background-color:red; left:200px; top:0px;}
+  }
+
+/* animation End */
 
 .header-image {
     position: absolute;
@@ -69,7 +85,6 @@ body{
      margin-left: 20px;
 }
 .header-image img{
-    /* position: absolute; */
     width: 100%;
     height: 500px;
     
@@ -134,23 +149,16 @@ aside a{
     color: #161616;
 
 }
-
-
-
 .blogs button{
     display: block;
     border: 1px solid #161616;
     padding: 5px 20px;
     border-radius: 3px;
-
-
-
 }
 .blogs button a{
     text-decoration: none;
     font-size: 16px;
-   color: #161616;
-   
+   color: #161616; 
 }
 .blog-span{
   margin-right: 30px;
@@ -163,7 +171,6 @@ aside a{
     border: none;
     font-size: 20px;
     color: #ffff;
-    
 }
 .button-tab{
     text-align: center;
@@ -254,8 +261,6 @@ footer a{
 @media only screen and (min-width:588px) and (max-width:768px) {
     .header-contant{
         padding: 70px 0px 50px 56px ;
-       
-       
      }
      .header-contant h1{
         font-size: 35px;
@@ -288,9 +293,7 @@ footer a{
         background-color: white;
         margin-bottom: 50px;
     }
-    
-
-    aside a{
+aside a{
         display: inline;
         padding: 10px;
         margin: 10px;
@@ -302,6 +305,24 @@ footer a{
         
     }
     
+}
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+    .header-contant{
+        padding: 70px 0px 50px 56px ;
+     }
+     .header-contant h1{
+        font-size: 45px;
+     }
+     .header-contant p{
+        font-size: 10px;
+     }
+     .contaiont-button {
+        font-size: 13px;
+     }
+    .header-image{
+        position: relative;
+    }
 }
 
 /* end  */
@@ -316,17 +337,3 @@ footer a{
 }
 
 /* end */
-.header-contant button {
-    
-   
-    position: relative;
-    animation: example 4s ease-in-out infinite alternate;
-     
-  }
-  
-  @keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    
-    100% {background-color:red; left:200px; top:0px;}
-  }
-
